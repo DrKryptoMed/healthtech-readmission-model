@@ -1,0 +1,31 @@
+# VS Code settings
+.vscode/
+
+# Environment
+*.egg-info/
+
+# Data — never commit patient data
+data/raw/
+data/processed/
+data/interim/
+*.csv
+*.parquet
+
+# Models
+models/*.pkl
+models/*.joblib
+
+# Jupyter
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+
+# Environment variables
+.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# MLflow
+mlruns/
