@@ -34,6 +34,10 @@ pip install -r requirements.txt
   before `pip install -r requirements.txt` on Windows
 
 ## Status
-✅ Environment setup complete  
-✅ Data exploration complete (3,773 encounters, 8.5% readmission rate)  
-🚧 Feature engineering (next)
+✅ Environment setup
+✅ Data exploration
+✅ Feature engineering
+✅ Model training (XGBoost AUC 0.891)
+✅ FastAPI serving (3 endpoints, 5.4ms response)
+✅ Docker containerisation
+🚧 Clinical dashboard frontend (next)
