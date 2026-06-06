@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+
+# Virtual environments
+venv/
+env/
+.env
+envs/
+
+# Data files — large, not needed in container
+data/
+*.csv
+*.parquet
+
+# Notebooks — not needed in production container
+notebooks/
+
+# Git
+.git/
+.gitignore
+
+# Reports and figures
+reports/
+
+# MLflow runs
+mlruns/
+
+# VS Code
+.vscode/
+
+# Test files
+tests/
+pytest.ini
+
+# Documentation
+*.md
