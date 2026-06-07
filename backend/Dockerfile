@@ -63,19 +63,9 @@ USER appuser
 
 # --- Runtime configuration ---
 # Document the port (doesn't actually publish it — that's docker run -p)
-EXPOSE 8000
+EXPOSE 7860
 
-# Health check — Docker will monitor this endpoint
-# --interval: check every 30 seconds
-# --timeout: fail if no response in 10 seconds
-# --retries: mark unhealthy after 3 failures
-HEALTHCHECK --interval=30s --timeout=10s --retries=3 \
-    CMD curl -f http://localhost:8000/health || exit 1
-
-# Start the API
-# Using 0.0.0.0 to bind to all interfaces inside the container
-# --workers 1: single worker for now (scale up in production)
 CMD ["uvicorn", "src.api.main:app", \
      "--host", "0.0.0.0", \
-     "--port", "8000", \
+     "--port", "7860", \
      "--workers", "1"]

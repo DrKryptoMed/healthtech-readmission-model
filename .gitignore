@@ -1,19 +1,19 @@
-# VS Code settings
-.vscode/
-
-# Environment
+# ===== Backend =====
+# Virtual environments
+venv/
+envs/
 *.egg-info/
 
 # Data — never commit patient data
-data/raw/
-data/processed/
-data/interim/
+backend/data/raw/
+backend/data/processed/
+backend/data/interim/
 *.csv
 *.parquet
 
-# Models
-models/*.pkl
-models/*.joblib
+# Models — large files
+backend/models/*.pkl
+backend/models/*.joblib
 
 # Jupyter
 .ipynb_checkpoints/
@@ -22,10 +22,21 @@ __pycache__/
 
 # Environment variables
 .env
-
-# OS
-.DS_Store
-Thumbs.db
+.env.local
 
 # MLflow
-mlruns/
+backend/mlruns/
+
+# ===== Frontend =====
+frontend/node_modules/
+frontend/.next/
+frontend/.env.local
+frontend/tsconfig.tsbuildinfo
+
+# ===== General =====
+.DS_Store
+Thumbs.db
+.vscode/
+
+backend/notebooks/mlruns/
+backend/mlruns/
